@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      div {
+        width: 200px;
+        height: 86px;
+        margin: 200px auto;
+        /* overflow: hidden; */
+      }
+      div > ul {
+        /*设置ul的宽度为2倍div的宽度*/
+        width: 700%;
+        list-style: none;
+        /*动画属性*/
+        animation: imgMove 20s linear infinite;
+      }
+      /* 暂停动画 */
+      div > ul:hover {
+        animation-play-state: paused;
+      }
+
+      div > ul > li {
+        width: 200px;
+        float: left;
+      }
+
+      div img {
+        width: 100%;
+      }
+      /*创建动画*/
+      @keyframes imgMove {
+        0%{
+            transform: translateX(0px);
+        }
+        4%{
+            transform: translateX(0px);
+        }
+        14%{
+            transform: translateX(-200px);
+        }
+        16%{
+            transform: translateX(-200px);
+        }
+        28%{
+            transform: translateX(-400px);
+        }
+        30%{
+            transform: translateX(-400px);
+        }
+        42%{
+            transform: translateX(-600px);
+        }
+        44%{
+            transform: translateX(-600px);
+        }
+        54%{
+            transform: translateX(-800px);
+        }
+        56%{
+            transform: translateX(-800px);
+        }
+        58%{
+            transform: translateX(-800px);
+        }
+        78%{
+            transform: translateX(-1000px);
+        }
+        80%{
+            transform: translateX(-1000px);
+        }
+        98%{
+            transform: translateX(-1200px);
+        }
+        100%{
+            transform: translateX(-1200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><img src="./img/c.jpg" alt="" /></li>
+        <li><img src="./img/7.jpg" alt="" /></li>
+        <li><img src="./img/8.jpg" alt="" /></li>
+        <li><img src="./img/b.jpg" alt="" /></li>
+        <li><img src="./img/7.jpg" alt="" /></li>
+        <li><img src="./img/bb.jpeg" alt="" /></li>
+        <li><img src="./img/8.jpg" alt="" /></li>
+        将需要轮播的图片在复制一份
+        <li><img src="./img/8.jpg" alt="" /></li>
+        <li><img src="./img/7.jpg" alt="" /></li>
+        <li><img src="./img/8.jpg" alt="" /></li>
+        <li><img src="./img/b.jpg" alt="" /></li>
+        <li><img src="./img/8.jpg" alt="" /></li>
+        <li><img src="./img/c.jpg" alt="" /></li>
+        <li><img src="./img/8.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </body>
+</html>
